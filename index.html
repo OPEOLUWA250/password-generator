@@ -5,6 +5,9 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	 <!-- font awesome -->
+	 <link rel="stylesheet" href="all.min.css">
+
      <!-- CSS file -->
       <link rel="stylesheet" href="styles.css">
 
@@ -12,49 +15,49 @@
  </head>
  <body>
      
-    <!-- INSERT HTML HERE -->
-<div class="container">
-	<h2>Password Generator</h2>
-	<div class="result-container">
-		<span id="result"></span>
-		<button class="btn" id="clipboard">
-			<i class="far fa-clipboard"></i>
+	
+	<div class="container">
+		<h2>Password Generator</h2>
+		<div class="result-container">
+			<span id="result"></span>
+			<button class="btn" id="clipboard">
+				<i class="far fa-clipboard"></i>
+			</button>
+		</div>
+		<div class="settings">
+			<div class="setting">
+				<label>Password length</label>
+				<input type="number" id="length" min='4' max='20' value='20'/>
+			</div>
+			<div class="setting">
+				<label>Include uppercase letters</label> 
+				<input type="checkbox" id="uppercase" checked />
+			</div>
+			<div class="setting">
+				<label>Include lowercase letters</label> 
+				<input type="checkbox" id="lowercase" checked />
+			</div>
+			<div class="setting">
+				<label>Include numbers</label> 
+				<input type="checkbox" id="numbers" checked />
+			</div>
+			<div class="setting">
+				<label>Include symbols</label> 
+				<input type="checkbox" id="symbols" checked />
+			</div>
+		</div>
+		<button class="btn btn-large" id="generate">
+			Generate password
 		</button>
 	</div>
-	<div class="settings">
-		<div class="setting">
-			<label>Password length</label>
-			<input type="number" id="length" min='4' max='20' value='20' />
-		</div>
-		<div class="setting">
-			<label>Include uppercase letters</label> 
-			<input type="checkbox" id="uppercase" checked />
-		</div>
-		<div class="setting">
-			<label>Include lowercase letters</label> 
-			<input type="checkbox" id="lowercase" checked />
-		</div>
-		<div class="setting">
-			<label>Include numbers</label> 
-			<input type="checkbox" id="numbers" checked />
-		</div>
-		<div class="setting">
-			<label>Include symbols</label> 
-			<input type="checkbox" id="symbols" checked />
-		</div>
-	</div>
-	<button class="btn btn-large" id="generate">
-		Generate password
-	</button>
-</div>
 
- 
- 
-<footer>
-	<p>Proudly built with 💖 by <br>  
-   <a href="https://opeoluwa250.github.io/Portfolio-website/">Opeoluwa Adejumo</a>
-   </p>
-</footer>
+	
+	
+	<footer>
+		<p>Proudly built with 💖 by <br>  
+	<a href="https://opeoluwa250.github.io/Portfolio-website/">Opeoluwa Adejumo</a>
+	</p>
+	</footer>
 
  </body>
 
